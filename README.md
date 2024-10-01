@@ -1,8 +1,5 @@
-# React + Vite
+# **Memory - The Odin Project**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+In this assignment I am required to create a Memory game in React making use of the useEffect Hook.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I decided to use the lorcana-api to fetch the urls of specific Disney Lorcana cards, whose art will be featured on the memory cards. The UI is in Italian as I plan to use it as a game for my nephew!
