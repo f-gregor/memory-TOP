@@ -1,0 +1,68 @@
+header,
+main,
+footer {
+  display: grid;
+  grid-template-columns: 1fr 360px 1fr;
+}
+
+@media (min-width: 780px) {
+  header,
+  main,
+  footer {
+    grid-template-columns: 1fr 750px 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  header,
+  main,
+  footer {
+    grid-template-columns: 1fr 1140px 1fr;
+  }
+}
+
+footer {
+  background-color: #1a1a1a;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+header > *,
+main > *,
+footer > * {
+  grid-column: 2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: white;
+  text-align: center;
+  margin: 45px 0px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1.25em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: inherit;
+}
+
+.card-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 60px 0px;
+  justify-content: center;
+}
+
+.card-container > p {
+  font-size: 1.5em;
+  min-height: 35vh;
+}

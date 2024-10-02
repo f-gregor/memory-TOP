@@ -1,0 +1,27 @@
+.card {
+  width: 360px;
+  padding: 20px;
+  color: inherit;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.card-image {
+  width: 320px;
+  height: 320px;
+  border-radius: 160px;
+  background-size: 150% auto;
+  background-position: center -30px;
+}
+
+.card:hover {
+  border-color: #646cff;
+}
+
+.card:focus,
+.card:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
