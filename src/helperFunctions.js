@@ -2,18 +2,22 @@ function calculateMessage(clicked, total, newRecord) {
   let newMessage = "";
 
   if (clicked < total * 0.25) {
-    newMessage = "Coraggio, è un ottimo inizio, ";
+    newMessage = "Coraggio, è un ottimo inizio,";
   } else if (clicked < total * 0.5) {
-    newMessage = "Hai quasi raggiunto la metà: ";
+    newMessage = "Hai quasi raggiunto la metà:";
+  } else if (clicked === total * 0.5) {
+    newMessage = "Sei a metà!";
   } else if (clicked < total * 0.75) {
-    newMessage = "Hai superato la metà: ";
+    newMessage = "Hai superato la metà:";
   } else if (clicked < total) {
-    newMessage = "Mancava veramente poco, ";
+    newMessage = "Mancava così poco!";
   } else {
-    newMessage = "Grande campione, ";
+    newMessage = "Ce l'hai fatta!";
   }
 
-  newMessage += `hai cliccato su ${clicked} ${
+  newMessage += ` ${
+    "!.".includes(newMessage[newMessage.length - 1]) ? "H" : "h"
+  }ai cliccato su ${clicked} ${
     clicked === 1 ? "personaggio" : "personaggi"
   } di ${total}!`;
 
